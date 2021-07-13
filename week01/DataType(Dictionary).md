@@ -1,6 +1,6 @@
 # Dictionary
   - **Key-Value 쌍으로 이루어진 자료형**을 Hash, Associative array라 하는데, **파이썬에서는 Dictionary라는 이름으로 이를 구현**한다.
-  - list와 tuple과는 다르게, **sequential하게 요소를 찾지 않는다.** 즉, **key 값으로 요소에 접근**한다.
+  - list와 tuple과는 다르게, **sequential하게 요소를 찾지 않는, unordered 자료형이다.** 즉, **key 값으로 요소에 접근**한다.
   - 어떤 **key 값이 갖는 value에 대해서 빠른 접근**이 요구될 때, **key 값으로 바로 value에 접근**하고자 할 때 사용한다.
   - **key 값은 고유해야 한다.**
 
