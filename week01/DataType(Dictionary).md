@@ -7,7 +7,7 @@
 ## 01. 생성
   - **{ } 속**에 **Key : Value로 이루어진 쌍 여러 개**를 집어 넣는다.
    - **Key 에는 immutable 자료형** 사용 : **Tuple, String, Number**
-   - **Value 에는 immutable 또는 mutable 자료형** 사용 : **Tuple, String, Number, List, Dictionary**
+   - **Value 에는 immutable 또는 mutable 자료형** 사용 : **Tuple, String, Number, List, Dictionary, Set**
 
 ```python
 class1 = {'Bachelor' : ['Tom', 'Jack', 'Anna', 'Bill'], 'Master': ['Ronny', 'Chris']}
