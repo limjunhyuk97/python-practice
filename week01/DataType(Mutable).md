@@ -5,7 +5,7 @@
 ## 01. Mutable
   - 한번 선언된 이후로 값이 변할 수 있는 자료형
   - 변수가 참조하고 있는 객체의 값이 변할 수 있다
-  - List, Dictionary
+  - List, Dictionary, set
 
 ### List
 
