@@ -1,5 +1,5 @@
 # Mutable, Immutable 객체
-  - Mutable : list, dictionary
+  - Mutable : list, dictionary, set
   - Immutable : number, string, tuple
  
 ## 01. Mutable
