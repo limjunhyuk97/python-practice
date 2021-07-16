@@ -35,6 +35,7 @@ print(class2)
 
 ## 03. 요소 삭제
   - **del Dictionary명[key]** : key 값에 대해서 key-value 쌍을 삭제
+  - **Dictionary명.pop(key, default)** : dictionary에서 key를 제거하고, key값과 쌍을 이루는 value 값을 반환. key 값이 없다면 default 값 반환
 
 ```python
 class2 = {(1, 2, 3) : ['ABC', 2], ('KDA', 'DOC', 2) : 3}
