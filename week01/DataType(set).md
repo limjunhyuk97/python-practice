@@ -1,14 +1,17 @@
 # Set
   - Dictionary와는 다르게 key-value 쌍으로 이루어져 있지 않으며, **수학에서의 집합과 유사**하다.
-  - unordered하므로 **index를 활용하여 sequential하게 요소를 찾지 않으며, 'in'을 통해서 value에 직접 접근**한다.
-  - 각 **value 값은 고유**해야 한다.
-  - **set은 mutable** 하지만, set **내부 value들은 immutable** 해야한다. : number, string, tuple
+  - unordered하므로 **index를 활용하여 sequential하게 요소를 찾지 않는다.**
+  - 각 **value 값은 고유**해야 한다 : **list, string, tuple 내부의 중복값 제거에 이용 가능**하다.
+  - **set은 mutable** 하지만, set **내부 value들은 hashable** 해야한다.
+    - number, string, tuple, boolean  O
+    - list, dictionary, set X
 
 ## 생성
   - { ... } : 중괄호로 감싸서 생성
-  - set([ ... ]) : set() 내부에 리스트로 제공
-  - set(" ... ") : set() 내부에 문자열로 제공
-  - set(( ... )) : set() 내부에 튜플로 
+  - **set() 함수**로 set를 생성
+    - set([ ... ]) : set() 내부에 리스트로 제공
+    - set(" ... ") : set() 내부에 문자열로 제공
+    - set(( ... )) : set() 내부에 튜플로 
 
 ```python
 Set1 = {1, 2, 3}
