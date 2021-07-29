@@ -9,6 +9,7 @@
 ### 4. IDLE editor (Editor window) : editor 작성 -> F5로 IDLE shell에 실행결과 표시
 
 ### 5. 주석 처리
+  - 주석 처리에서도 들여쓰기를 해주어야 한다.
 
 ```python
 # hello.py
