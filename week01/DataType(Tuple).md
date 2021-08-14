@@ -72,3 +72,12 @@ Jack = Physical(190, 79, "Jack", 24)
 print(Tom.Height)
 # 183
 ```
+
+## 06. Unpack Tuple
+  - **좌변에 변수들**을 놓고 **우변에 list나 tuple**을 놓으면, 우변의 list나 tuple의 원소를 좌변의 원소들로 옮겨 담을 수 있다.
+  - 좌변에 존재하는 변수의 수와, 우변에 존재하는 변수의 수가 정확히 일치해야 한다.
+
+```python
+a,b,c,d = [2,3,4,5]
+print(a,b,c,d)
+```
