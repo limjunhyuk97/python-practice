@@ -17,6 +17,13 @@
 4. reverse
     - reverse=True 설정은 역순(내림차순)으로 정렬을 유도한다.
 
+## 뒤집기
+
+1. list.reverse()
+  - list를 역순으로 정렬
+  
+2. reverse(list)
+  - list 원소를 역순으로 꺼내는 iterable 객체를 생성
 '''
 
 
