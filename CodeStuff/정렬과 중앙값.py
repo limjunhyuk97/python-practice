@@ -19,6 +19,7 @@
 
 '''
 
+
 ## 중앙값 찾기
 def list_mid(*args):
     List = sorted(list(args))
@@ -27,3 +28,9 @@ def list_mid(*args):
 print(list_mid(3, 1, 6, 10, 54,222, 8, 7, 34, 22))
 
 
+## list 역순 설정
+from typing import Any, MutableSequence
+
+def reverse_list(arr: MutableSequence) -> None:
+    for i in range(len(arr) // 2):
+        arr[i], arr[len(arr) - i - 1] = arr[len(arr) - i - 1], arr[i]
