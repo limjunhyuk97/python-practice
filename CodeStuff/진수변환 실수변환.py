@@ -26,3 +26,12 @@ print("{0:#b}, {0:#d}, {0:#o}, {0:#x}".format(10))
 # 입력 문자열 실수 변환 -> float()
 print(float('3.14') + 0.09)
 
+# 10진수 -> n 진법 변환
+def card_conv(x : int, r : int) -> str:
+    d = ''
+    dchar = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+
+    while x > 0 :
+        d += dchar[x % r]
+        x //= r
+    return d[::-1]
