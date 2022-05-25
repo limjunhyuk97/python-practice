@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="kor">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="icon" href="./assets/favicon.ico" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <title>Discrete Modeling</title>
+  </head>
+  <body>
+    <section class="title">
+      <h1>이산 모델링 기초 프로젝트</h1>
+      <h2>
+        <p>
+          undirected vertex weighted hypergraph내의 vertex를 constraint 내에서
+          고르는 경우,
+        </p>
+        <p>
+          선택된 vertex를 포함하는 edge에 포함된 vertex 수를 최대로 하는
+          알고리즘 찾기
+        </p>
+      </h2>
+      <div class="participant">
+        <h3>소프트웨어학과 201820740 임준혁</h3>
+        <h3>소프트웨어학과 201820765 신기철</h3>
+      </div>
+    </section>
+    <div class="crossline"></div>
+    <section class="inputs">
+      <h2>그래프 랜덤 생성</h2>
+      <div class="input-wrapper">
+        <div class="inner-wrapper">
+          <label class="text-styles" for="constraint"> Constraint </label>
+          <input
+            class="input-styles"
+            type="text"
+            id="constraint"
+            placeholder="각 vertex가 갖을 수 있는 weight 제한"
+          />
+        </div>
+        <div class="inner-wrapper">
+          <label class="text-styles" for="constraint">
+            각 vertex weight 제한
+          </label>
+          <input
+            class="input-styles"
+            type="text"
+            id="constraint"
+            placeholder="Input Constraint"
+          />
+        </div>
+        <div class="inner-wrapper">
+          <label class="text-styles" for="constraint"> Edge 수 </label>
+          <input
+            class="input-styles"
+            type="text"
+            id="constraint"
+            placeholder="초기 Graph Edge 수 입력"
+          />
+        </div>
+        <div class="inner-wrapper">
+          <label class="text-styles" for="constraint"> Vertex 수 </label>
+          <input
+            class="input-styles"
+            type="text"
+            id="constraint"
+            placeholder="Input Constraint"
+          />
+        </div>
+      </div>
+    </section>
+    <div class="crossline"></div>
+    <section class="code">
+      <py-script></py-script>
+    </section>
+  </body>
+</html>

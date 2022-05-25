@@ -1,0 +1,80 @@
+.crossline {
+  width: 90%;
+  height: 1px;
+  margin: 30px;
+  background-color: gray;
+}
+
+.text-styles {
+  position: absolute;
+  right: 0;
+  margin: 0px 3px;
+  font-size: 20px;
+}
+
+.input-styles {
+  position: absolute;
+  left: 0;
+  width: 400px;
+  height: 25px;
+  margin: 0px 3px;
+  border-bottom: 1px solid #000000;
+  font-size: 20px;
+  text-align: center;
+}
+.input-styles:focus {
+  outline: 0px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 30px;
+}
+body section.title h1 {
+  margin: 50px 0px;
+  font-size: 50px;
+  font-weight: 700;
+}
+body section.title h2 {
+  font-size: 20px;
+  text-align: center;
+}
+body section.title h2 p {
+  line-height: 2rem;
+}
+body section.title .participant {
+  margin: 50px;
+  font-size: 16px;
+}
+body section.title .participant h3 {
+  padding: 8px;
+}
+body section.inputs {
+  width: 100%;
+}
+body section.inputs h2 {
+  margin: 20px;
+  font-size: 25px;
+}
+body section.inputs div.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+body section.inputs div.input-wrapper .inner-wrapper {
+  position: relative;
+  margin: 15px;
+}
+body section.code {
+  margin: 10px;
+}
+
+/*# sourceMappingURL=main.css.map */
