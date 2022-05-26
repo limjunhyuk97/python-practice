@@ -5,16 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"/>
     <link rel="stylesheet" href="./main.css" />
     <link rel="icon" href="./assets/favicon.ico" />
     <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <py-env>
+      - networkx
+      - numpy
+      - matplotlib
+    </py-env>
     <title>Discrete Modeling</title>
   </head>
   <body>
+
     <section class="title">
       <h1>이산 모델링 기초 프로젝트</h1>
       <h2>
@@ -32,53 +35,89 @@
         <h3>소프트웨어학과 201820765 신기철</h3>
       </div>
     </section>
+
     <div class="crossline"></div>
+
     <section class="inputs">
-      <h2>그래프 랜덤 생성</h2>
+      <h2>그래프 랜덤 생성 위한 입력</h2>
       <div class="input-wrapper">
         <div class="inner-wrapper">
           <label class="text-styles" for="constraint"> Constraint </label>
           <input
             class="input-styles"
-            type="text"
+            type="number"
             id="constraint"
             placeholder="각 vertex가 갖을 수 있는 weight 제한"
           />
         </div>
         <div class="inner-wrapper">
-          <label class="text-styles" for="constraint">
+          <label class="text-styles" for="weight">
             각 vertex weight 제한
           </label>
           <input
             class="input-styles"
-            type="text"
-            id="constraint"
+            type="number"
+            id="weight"
             placeholder="Input Constraint"
           />
         </div>
         <div class="inner-wrapper">
-          <label class="text-styles" for="constraint"> Edge 수 </label>
+          <label class="text-styles" for="edge"> Edge 수 </label>
           <input
             class="input-styles"
-            type="text"
-            id="constraint"
+            type="number"
+            id="edge"
             placeholder="초기 Graph Edge 수 입력"
           />
         </div>
         <div class="inner-wrapper">
-          <label class="text-styles" for="constraint"> Vertex 수 </label>
+          <label class="text-styles" for="vertex"> Vertex 수 </label>
           <input
             class="input-styles"
-            type="text"
-            id="constraint"
+            type="number"
+            id="vertex"
             placeholder="Input Constraint"
           />
         </div>
+        <button id="submit-inputs">제출</button>
       </div>
     </section>
+
     <div class="crossline"></div>
-    <section class="code">
-      <py-script></py-script>
+
+    <section id="show-graph">
+
     </section>
+
+    <py-script output="show-graph">
+      import networkx as nx
+      import numpy as np
+      import matplotlib.pyplot as plt
+
+      <!-- constraint = 0
+      weight = 0
+      edge = 0
+      vetex = 0
+
+      def get_inputs(*args) :
+        constraint = Element("constraint").value; 
+        weight = Element("weight").value; 
+        edge = Element("edge").value; 
+        vertex = Element("vertex").value; 
+        pyscript.write('graph', constraint) -->
+
+      G = nx.Graph()
+      G.add_node(1)
+      G.add_node(2)
+      G.add_node(3)
+
+      G.add_edge(1, 2)
+      G.add_edge(1, 3)
+      G.add_edge(2, 3)
+
+      nx.draw(G, with_labels=1)
+        
+    </py-script>
+
   </body>
 </html>
